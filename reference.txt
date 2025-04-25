@@ -1,0 +1,38 @@
+Image References:
+
+1. Home Page Parallax Images:
+- jett.jpg: https://www.riotgames.com/en/news/valorant-jett-agent-spotlight
+- gen3.jpg: https://www.riotgames.com/en/news/valorant-gen-3-agent-spotlight
+
+2. Maps Images:
+- ascent.jpg: https://valorant.fandom.com/wiki/Ascent
+- bind.jpg: https://valorant.fandom.com/wiki/Bind
+- haven.jpg: https://valorant.fandom.com/wiki/Haven
+- icebox.jpg: https://valorant.fandom.com/wiki/Icebox
+- lotus.jpg: https://valorant.fandom.com/wiki/Lotus
+- pearl.jpg: https://valorant.fandom.com/wiki/Pearl
+- split.jpg: https://valorant.fandom.com/wiki/Split
+- sunset.jpg: https://valorant.fandom.com/wiki/Sunset
+
+3. Agents Images:
+- jett.jpg: https://playvalorant.com/en-us/agents/jett/
+- raze.jpg: https://playvalorant.com/en-us/agents/raze/
+- phoenix.jpg: https://playvalorant.com/en-us/agents/phoenix/
+- sova.jpg: https://playvalorant.com/en-us/agents/sova/
+- brimstone.jpg: https://playvalorant.com/en-us/agents/brimstone/
+- sage.jpg: https://playvalorant.com/en-us/agents/sage/
+- cypher.jpg: https://playvalorant.com/en-us/agents/cypher/
+- omen.jpg: https://playvalorant.com/en-us/agents/omen/
+- killjoy.jpg: https://playvalorant.com/en-us/agents/killjoy/
+- viper.jpg: https://playvalorant.com/en-us/agents/viper/
+
+4. News Images:
+- patch-notes.jpg: https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-1-0/
+- tournament.jpg: https://playvalorant.com/en-us/news/esports/valorant-champions-tour-2024/
+- new-agent.jpg: https://playvalorant.com/en-us/news/game-updates/new-agent-announcement/
+
+5. Icons:
+- All icons are from the official VALORANT game assets
+- Source: https://playvalorant.com/en-us/
+
+Note: All images are used for educational purposes only. All rights belong to Riot Games. 

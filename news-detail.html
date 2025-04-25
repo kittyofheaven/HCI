@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PALORANT - News Detail</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/news.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="index.html" class="logo">PALORANT</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="agents.html">AGENTS</a></li>
+          <li><a href="maps.html">MAPS</a></li>
+          <li><a href="news.html" class="active">NEWS</a></li>
+          <li><a href="about.html">REPORT A BUG</a></li>
+        </ul>
+        <a href="#" class="cta-button">GET STARTED NOW</a>
+        <button class="toggle-btn" id="toggleBtn" aria-label="Toggle menu">
+          <svg class="nav-bars" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero parallax-section">
+        <div class="parallax-bg">
+          <img src="img/parallax/gen3.jpg" alt="Background Layer" class="parallax-layer" data-speed="0.6">
+          <div class="overlay"></div>
+        </div>
+        <div class="hero-content">
+          <h1 class="hero-title">PALORANT Patch 1.0: Major Gameplay Updates</h1>
+          <p class="hero-description">March 15, 2024 • PATCH NOTES</p>
+        </div>
+      </section>
+
+      <article class="news-detail">
+        <div class="news-detail-image">
+          <img src="img/news/patch-1.jpg" alt="PALORANT Patch 1.0">
+        </div>
+
+        <div class="news-detail-content">
+          <h2>Introduction</h2>
+          <p>Welcome to PALORANT Patch 1.0! This major update brings significant changes to the game's core mechanics, agent abilities, and competitive systems. We've listened to your feedback and made adjustments to create a more balanced and enjoyable experience for all players.</p>
+
+          <h2>Agent Updates</h2>
+          <h3>Jett</h3>
+          <ul>
+            <li>Tailwind (E) cooldown increased from 20s to 25s</li>
+            <li>Cloudburst (C) duration reduced from 4.5s to 4s</li>
+            <li>Blade Storm (X) now requires 7 ultimate points (up from 6)</li>
+          </ul>
+
+          <h3>Phoenix</h3>
+          <ul>
+            <li>Hot Hands (E) healing increased from 50 to 60</li>
+            <li>Run It Back (X) duration increased from 10s to 12s</li>
+            <li>Blaze (C) wall duration reduced from 8s to 6s</li>
+          </ul>
+
+          <h2>Map Changes</h2>
+          <p>We've made several adjustments to improve map balance and gameplay flow:</p>
+          <ul>
+            <li>Added new cover positions on Ascent A site</li>
+            <li>Modified Bind teleporter locations for better rotation options</li>
+            <li>Adjusted Haven C site layout for more tactical opportunities</li>
+          </ul>
+
+          <h2>Competitive Updates</h2>
+          <p>The competitive system has been completely revamped:</p>
+          <ul>
+            <li>New ranking system with 8 tiers (Iron to Radiant)</li>
+            <li>Added placement matches for new players</li>
+            <li>Improved matchmaking algorithm for better skill-based matches</li>
+            <li>New competitive rewards system</li>
+          </ul>
+
+          <h2>Quality of Life Improvements</h2>
+          <ul>
+            <li>Added ping system for better team communication</li>
+            <li>Improved death camera for better post-death information</li>
+            <li>New practice range with moving targets</li>
+            <li>Added crosshair customization options</li>
+          </ul>
+
+          <h2>Bug Fixes</h2>
+          <ul>
+            <li>Fixed issue with Sage's Barrier Orb (C) not deploying properly</li>
+            <li>Resolved problem with Cypher's Spycam (E) getting stuck</li>
+            <li>Fixed various visual glitches on different maps</li>
+            <li>Addressed performance issues on lower-end systems</li>
+          </ul>
+
+          <div class="news-detail-footer">
+            <a href="news.html" class="back-to-news">← Back to News</a>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <img src="img/icons/kittyofheavenlogo.png" alt="Kittyofheaven Logo" class="footer-logo">
+          <p>© 2024 KITTYOFHEAVEN. ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">PRIVACY NOTICE</a>
+          <a href="#">TERMS OF SERVICE</a>
+          <a href="#">COOKIE PREFERENCES</a>
+        </div>
+        <div class="footer-right">
+          <img src="img/home/esrb.png" alt="ESRB Rating" class="esrb-rating">
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const toggleBtn = document.getElementById('toggleBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        toggleBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+      });
+    </script>
+  </body>
+</html> 

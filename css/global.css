@@ -1,0 +1,186 @@
+:root {
+  /* Gaming-themed Colors */
+  --background: #0F1923;
+  --secondary: #1F2326;
+  --accent: #FF4655;
+  --accent-hover: #FF2A3B;
+  --text: #ECE8E1;
+  --text-secondary: #94A3B8;
+  --neon-blue: #00F0FF;
+  --neon-purple: #B026FF;
+  --neon-green: #00FF9D;
+  --neon-yellow: #FFD700;
+  
+  /* Gaming-themed Fonts */
+  --font-primary: 'Teko', sans-serif;
+  --font-secondary: 'Orbitron', sans-serif;
+  --font-body: 'Rajdhani', sans-serif;
+  
+  /* Transitions */
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 8px 12px rgba(0, 0, 0, 0.4);
+  --shadow-neon: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
+  --shadow-accent: 0 0 10px var(--accent), 0 0 20px var(--accent);
+}
+
+/* Import Gaming Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, .hero-title, .section-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-size: 5rem;
+  background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: var(--shadow-neon);
+}
+
+.section-title {
+  font-size: 3rem;
+  color: var(--text);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Buttons */
+.cta-button, .submit-button, .play-button, .explore-button {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, var(--accent), var(--accent-hover));
+  color: var(--text);
+  border: none;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.cta-button:hover, .submit-button:hover, .play-button:hover, .explore-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-accent);
+}
+
+.cta-button::before, .submit-button::before, .play-button::before, .explore-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: var(--transition-slow);
+  z-index: -1;
+}
+
+.cta-button:hover::before, .submit-button:hover::before, .play-button:hover::before, .explore-button:hover::before {
+  left: 100%;
+}
+
+/* Cards */
+.card, .news-card, .map-card, .role-card {
+  background: rgba(31, 35, 38, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.card:hover, .news-card:hover, .map-card:hover, .role-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent);
+}
+
+/* Navigation */
+.nav {
+  background: rgba(15, 25, 35, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-links a {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: var(--transition);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 5px var(--neon-blue); }
+  50% { box-shadow: 0 0 20px var(--neon-blue); }
+  100% { box-shadow: 0 0 5px var(--neon-blue); }
+}
+
+.animate-text {
+  animation: pulse 2s infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .cta-button, .submit-button, .play-button, .explore-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+} 

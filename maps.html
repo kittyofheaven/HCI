@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PALORANT - Maps</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/maps.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="index.html" class="logo">PALORANT</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="agents.html">AGENTS</a></li>
+          <li><a href="maps.html" class="active">MAPS</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="report-bug.html">REPORT A BUG</a></li>
+        </ul>
+        <a href="#" class="cta-button">GET STARTED NOW</a>
+        <button class="toggle-btn" id="toggleBtn" aria-label="Toggle menu">
+          <svg class="nav-bars" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero parallax-section">
+        <div class="parallax-bg">
+          <img src="img/maps/haven.png" alt="Haven Map Background" class="parallax-layer" data-speed="0.6">
+          <div class="overlay"></div>
+        </div>
+        <div class="hero-content">
+          <h1 class="hero-title">MAPS</h1>
+          <p class="hero-description">Explore the diverse battlegrounds of Palorant</p>
+        </div>
+      </section>
+
+      <section class="maps-grid">
+        <div class="map-card">
+          <img src="img/maps/ascent.png" alt="Ascent" class="map-image">
+          <div class="map-info">
+            <h2 class="map-name">ASCENT</h2>
+            <div class="map-description">
+              <p>An open playground for small wars of position and attrition.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card">
+          <img src="img/maps/bind.png" alt="Bind" class="map-image">
+          <div class="map-info">
+            <h2 class="map-name">BIND</h2>
+            <div class="map-description">
+              <p>Two sites. No middle. Gotta pick left or right.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card">
+          <img src="img/maps/haven.png" alt="Haven" class="map-image">
+          <div class="map-info">
+            <h2 class="map-name">HAVEN</h2>
+            <div class="map-description">
+              <p>Three sites. Three opportunities for glory.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card">
+          <img src="img/maps/split.png" alt="Split" class="map-image">
+          <div class="map-info">
+            <h2 class="map-name">SPLIT</h2>
+            <div class="map-description">
+              <p>High ground vs low ground. Risk vs reward.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card">
+          <img src="img/maps/icebox.png" alt="Icebox" class="map-image">
+          <div class="map-info">
+            <h2 class="map-name">ICEBOX</h2>
+            <div class="map-description">
+              <p>Your combat skills on this facility will be put to the ultimate test.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card">
+          <img src="img/maps/breeze.png" alt="Breeze" class="map-image">
+          <div class="map-info">
+            <h2 class="map-name">BREEZE</h2>
+            <div class="map-description">
+              <p>Take in the sights of historic ruins or seaside caves on this tropical paradise.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card">
+          <img src="img/maps/fracture.png" alt="Fracture" class="map-image">
+          <div class="map-info">
+            <h2 class="map-name">FRACTURE</h2>
+            <div class="map-description">
+              <p>A top secret research facility split apart by a failed radianite experiment.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card">
+          <img src="img/maps/pearl.png" alt="Pearl" class="map-image">
+          <div class="map-info">
+            <h2 class="map-name">PEARL</h2>
+            <div class="map-description">
+              <p>Attackers push down into the Defenders on this underwater city.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card">
+          <img src="img/maps/lotus.png" alt="Lotus" class="map-image">
+          <div class="map-info">
+            <h2 class="map-name">LOTUS</h2>
+            <div class="map-description">
+              <p>A mysterious structure housing an astral conduit with three sites to control.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <img src="img/icons/kittyofheavenlogo.png" alt="Kittyofheaven Logo" class="footer-logo">
+          <p>© 2024 KITTYOFHEAVEN. ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">PRIVACY NOTICE</a>
+          <a href="#">TERMS OF SERVICE</a>
+          <a href="#">COOKIE PREFERENCES</a>
+        </div>
+        <div class="footer-right">
+          <img src="img/home/esrb.png" alt="ESRB Rating" class="esrb-rating">
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const parallaxLayers = document.querySelectorAll('.parallax-layer');
+        const hero = document.querySelector('.hero');
+        
+        window.addEventListener('scroll', () => {
+          const scrolled = window.pageYOffset;
+          const heroHeight = hero.offsetHeight;
+          const scrollPercent = (scrolled / heroHeight) * 100;
+          
+          parallaxLayers.forEach((layer, index) => {
+            const speed = layer.getAttribute('data-speed');
+            const yPos = -(scrolled * speed);
+            const scale = 1 + (scrollPercent * 0.01);
+            const rotate = scrollPercent * 0.02;
+            
+            layer.style.transform = `
+              translateY(${yPos}px) 
+              scale(${scale}) 
+              rotate(${rotate}deg)
+            `;
+          });
+        });
+
+        // Mobile menu toggle
+        const toggleBtn = document.getElementById('toggleBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        toggleBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+      });
+    </script>
+  </body>
+</html> 

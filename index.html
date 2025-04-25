@@ -1,0 +1,135 @@
+<!-- parallax -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PALORANT</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="index.html" class="logo">PALORANT</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">HOME</a></li>
+          <li><a href="agents.html">AGENTS</a></li>
+          <li><a href="maps.html">MAPS</a></li>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="report-bug.html">REPORT A BUG</a></li>
+        </ul>
+        <a href="#" class="cta-button">GET STARTED NOW</a>
+        <button class="toggle-btn" id="toggleBtn" aria-label="Toggle menu">
+          <svg class="nav-bars" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero parallax-section">
+        <div class="parallax-bg">
+          <img src="img/parallax/gen3.jpg" alt="Background Layer" class="parallax-layer" data-speed="0.6">
+          <div class="overlay"></div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2 class="subtitle">AGENT OF THE SEASON</h2>
+            <h1 class="title">FLYING JETT</h1>
+            <a href="#" class="play-button">PLAY FREE</a>
+          </div>
+          <div class="jett-container">
+            <img src="img/home/jett.png" alt="Jett" class="jett-image" />
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="content">
+          <h2 class="section-title">PALORANT: PRECISION MEETS TEAMWORK</h2>
+          <div class="feature-images">
+            <img src="img/home/team.png" alt="Team" class="team-image" />
+          </div>
+          <p class="feature-text">
+            Palorant is a tactical 5v5 shooter by Kittyofheaven, combining precision gunplay
+            with unique agent abilities to create an unparalleled competitive experience.
+          </p>
+          <a href="agents.html" class="explore-button">EXPLORE AGENTS</a>
+        </div>
+      </section>
+
+      <section class="features agents-feature">
+        <div class="content">
+          <h2 class="section-title">YOUR AGENTS</h2>
+          <div class="feature-images">
+            <img src="img/home/agentsilhuette.png" alt="Agents" class="team-image" />
+          </div>
+          <p class="feature-text">
+            More than guns and bullets, you'll choose an Agent armed with adaptive, swift, 
+            and lethal abilities that create opportunities to let your gunplay shine.
+          </p>
+          <a href="agents.html" class="explore-button">VIEW ALL AGENTS</a>
+        </div>
+      </section>
+
+      <section class="game-stats">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>100+ SKINS</h3>
+          </div>
+          <div class="stat-item">
+            <h3>30+ AGENTS</h3>
+          </div>
+          <div class="stat-item">
+            <h3>20 DIFFERENT MAPS</h3>
+          </div>
+          <div class="stat-item">
+            <h3>8 GAME MODES</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="roles">
+        <div class="content">
+          <div class="roles-grid">
+            <div class="role-card">
+              <div class="role-icon controller"></div>
+              <h3>CONTROLLER</h3>
+            </div>
+            <div class="role-card">
+              <div class="role-icon duelist"></div>
+              <h3>DUELIST</h3>
+            </div>
+            <div class="role-card">
+              <div class="role-icon sentinel"></div>
+              <h3>SENTINEL</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <img src="img/icons/kittyofheavenlogo.png" alt="Kittyofheaven Logo" class="footer-logo">
+          <p>© 2024 KITTYOFHEAVEN. ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">PRIVACY NOTICE</a>
+          <a href="#">TERMS OF SERVICE</a>
+          <a href="#">COOKIE PREFERENCES</a>
+        </div>
+        <div class="footer-right">
+          <img src="img/home/esrb.png" alt="ESRB Rating" class="esrb-rating">
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
