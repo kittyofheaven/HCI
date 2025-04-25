@@ -33,6 +33,4 @@ Image References:
 
 5. Icons:
 - All icons are from the official VALORANT game assets
-- Source: https://playvalorant.com/en-us/
-
-Note: All images are used for educational purposes only. All rights belong to Riot Games. 
+- Source: https://playvalorant.com/en-us/ 
